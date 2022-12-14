@@ -34,7 +34,7 @@ async function main() {
 
   queue = new Queue({
     storageClass: MongoQueueStorage,
-    storageClassArgs: [],
+    storageClassArgs: [storageOptions],
   });
 
   // register 2 tasks at once
